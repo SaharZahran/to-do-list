@@ -1,0 +1,398 @@
+* {
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(29, 29, 32);
+  margin: 0;
+  padding: 0;
+}
+.buttons{
+  display: none;
+}
+h1 {
+  
+  position: relative;
+  width: 100%;
+  font-size: 70px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.767);
+  padding: 20px;
+  height: 100px;
+}
+.buttons #logOutBtn {
+  position: relative;
+  bottom: 47px;
+  font-size: 25px;
+  color: rgb(218, 216, 216);
+  border-radius: 5px;
+  padding: 5px;
+}
+.buttons #logOutBtn:hover {
+  color: rgb(29, 29, 32);
+  background-color: rgb(82, 82, 87);
+}
+.buttons #accountSettingsBtn {
+  position: relative;
+  font-size: 25px;
+  color: rgb(218, 216, 216);
+  border-radius: 5px;
+  padding: 5px;
+  width: 250px;
+  bottom: 47px;
+}
+.buttons #accountSettingsBtn:hover {
+  color: rgb(29, 29, 32);
+  background-color: rgb(82, 82, 87);
+}
+
+/*start Page*/
+.startPage {
+  background-color: rgb(29, 29, 32);
+  width: 100%;
+  text-align: center;
+  padding-top: 200px;
+  bottom:40px;
+}
+.startPage h2 {
+  font-size: 80px;
+  color: white;
+}
+hr {
+  margin-bottom: 50px;
+}
+.startPage p {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.signUpBtn {
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  color: rgb(29, 29, 32);
+  background-color: white;
+}
+.signUpBtn:hover {
+  color: white;
+  background-color: rgb(82, 82, 87);
+  cursor: pointer;
+}
+/*Sign Up Page*/
+.signUpPage {
+  position: relative;
+  display: none;
+  background-color: rgb(29, 29, 32);
+  text-align: center;
+  padding-top: 150px;
+}
+.signUpPage h2 {
+  position: relative;
+  font-size: 80px;
+  margin: 10px;
+  color: white;
+  margin-bottom: 50px;
+  right: 245px;
+}
+#signUpForm {
+  position: relative;
+}
+#signUp {
+  position: relative;
+  border: 2px solid white;
+  width: 30%;
+  left: 400px;
+  height: 490px;
+  background-color: rgb(55, 55, 56);
+  border-radius: 5px;
+}
+
+.signUpPage .formLabel{
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  width: 200px;
+  left: 90px;
+  text-align: left;
+  color: white;
+  font-size: 35px;
+  margin-top: 15px;
+  background-color: rgb(55, 55, 56);
+}
+.signUpPage input {
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(204, 202, 202);
+}
+#image img {
+  display: none;
+  position: relative;
+  bottom: 470px;
+  left: 900px;
+  width: 300px;
+  height: 400px;
+}
+#submitBtn {
+  border-radius: 15px;
+  margin: 10px;
+}
+#submitBtn:hover {
+  color: white;
+  background-color: rgb(82, 82, 87);
+  cursor: pointer;
+}
+.terms {
+  display: none;
+  position: relative;
+  bottom: 300px;
+  left: 920px;
+  background-color: rgb(82, 82, 87);
+  width: 300px;
+  height: 50px;
+  box-shadow: 5px 5px 5px 5px white;
+  font-size: 20px;
+}
+.terms label {
+  position: relative;
+  display: inline;
+  background-color: rgb(82, 82, 87);
+  top: 12px;
+  left: 10px;
+  padding: 10px;
+}
+.terms input {
+  position: relative;
+  top: 10px;
+}
+
+/*Log in Page*/
+.logInPage {
+  display: none;
+  position: relative;
+  left: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  top: 50px;
+}
+.logInPage p{
+  position: relative;
+  color: red;
+  bottom: 150px;
+  left: 20px;
+  width: 250px;
+}
+.logInPage #logIn {
+  padding: 15px;
+  border: 1px solid white;
+  width: 300px;
+  border-radius: 5px;
+}
+.logInPage h2 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.logInPage label {
+  display: block;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.logInPage input {
+  background-color: white;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+#logInBtn {
+  position: relative;
+  left: 110px;
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 10px;
+}
+#logInBtn:hover {
+  color: white;
+  background-color: rgb(82, 82, 87);
+  cursor: pointer;
+}
+/*Dashboard page*/
+.dashBoard {
+  display: none;
+  position: relative;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 30px;
+  left: 550px;
+  top: 90px;
+}
+.dashBoard h2 {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+.dashBoard form::before,
+.dashBoard form::after {
+  content: "--------------------------";
+}
+.dashBoard form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.dashBoard #newList {
+  background-color: white;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dashBoard #newList:hover {
+  background-color: rgb(82, 82, 87);
+  color: white;
+}
+/*blank list page */
+.blankList {
+  display: none;
+  position: relative;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 30px;
+  left: 150px;
+  top: 90px;
+}
+.blankList h2 {
+  font-size: 70px;
+}
+.blankList form::before {
+  content: "----------------------------------------------";
+}
+.blankList label {
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.blankList input {
+  background-color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+  width: 450px;
+  padding: 5px;
+}
+
+#addNewListNameBtn {
+  position: relative;
+  width: fit-content;
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  bottom: 5px;
+}
+#addNewListNameBtn:hover {
+  color: white;
+  cursor: pointer;
+  background-color: rgb(82, 82, 87);
+}
+
+#addNewListItemBtn {
+  position: relative;
+  width: fit-content;
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  bottom: 5px;
+}
+#addNewListItemBtn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(82, 82, 87);
+}
+#save {
+cursor: pointer;
+position: relative;
+width: fit-content;
+border-radius: 15px;
+padding: 20px;
+font-size: 25px;
+left:200px;
+margin-top: 20px;
+}
+#save:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(82, 82, 87);
+}
+.blankList .newList {
+  position: relative;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 30px;
+  left: 850px;
+  bottom: 420px;
+}
+.blankList .newList p {
+  position: relative;
+  font-size: 50px;
+  right: 25px;
+}
+.blankList .newList ul::before {
+  content: "-------------------";
+}
+.blankList .newList ul li {
+  padding: 20px;
+  list-style-type: circle;
+}
+
+/*To do list page*/
+.toDoList {
+  display: none;
+  position: relative;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 30px;
+  left: 550px;
+  top: 90px;
+}
+.toDoList form #newItemBtn {
+  background-color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+.toDoList form #newItem {
+  background-color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.toDoList form #newItemBtn:hover {
+  background-color: rgb(82, 82, 87);
+  color: white;
+}
+.toDoList ul {
+  list-style-type: circle;
+}
+.toDoList ul li {
+  margin: 20px;
+}
+/*Account Settings Page*/
+.accountSettings{
+    display: none;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+#accountSettingsForm input{
+display: block;
+background-color: white;
+font-size: 30px;
+margin: 15px;
+}
+#accountSettingsForm label{
+    margin: 15px;
+    color: white;
+    font-size: 40px;
+}
+#accountSettingsForm #editBtn{
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 30px;
+}

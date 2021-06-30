@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+        <h1>To-do-list Application</h1>
+        <div class="buttons">
+            <button id="logOutBtn">Log out</button>
+            <button id="accountSettingsBtn">Account Settings</button>
+        </div>
+    <!--Start Page-->
+    <div class="startPage">
+        <h2>To-do-list</h2>
+        <p>Keeps you more organized, makes you more manageable, and
+            helps you stay focused.</p>
+        <hr>
+        <button class="signUpBtn" id="signUpBtn">Sign Up</button>
+        <button class="signUpBtn" id="logInButton">Log In</button>
+    </div>
+    <!--Sign Up Page-->
+    <div class="signUpPage">
+        <h2>Sign up</h2>
+        <form id="signUpForm">
+            <fieldset id="signUp">
+                <label for="firstName" class="formLabel">First Name</label>
+                <input type="text" id="firstName" placeholder="first Name" required>
+
+                <label for="lastName" class="formLabel">Last Name</label>
+                <input type="text" id="lastName" placeholder="last Name" required>
+
+                <label for="email" class="formLabel">E-mail</label>
+                <input type="email" id="email" placeholder="email" required>
+
+                <label for="password" class="formLabel">Password</label>
+                <input type="password" id="password" placeholder="password" required>
+                <br>
+                <input type="submit" id="submitBtn">
+            </fieldset>
+        </form>
+        <div class="terms">
+            <input type="checkbox" id="agreement">
+            <label for="agreement">I agree to the Terms of Use</label>
+        </div>
+        <div id="image">
+            <img src=''>
+        </div>
+    </div>
+    <!-- Log in Page-->
+    <div class="logInPage">
+        <h2>Log in</h2>
+        <form id="logInForm">
+            <fieldset id='logIn'>
+                <label for="logInEmailemail">E-mail</label>
+                <input type="text" id="logInEmailemail" required>
+                <label for="logInPassword">Password</label>
+                <input type="password" id="logInPassword" required>
+                <input type="submit" id="logInBtn" value="login">
+            </fieldset>
+        </form>
+    </div>
+
+    <!--Dashboard-->
+    <div class="dashBoard">
+        <h2>Dashboard :</h2>
+        <form id="dashBoardForm">
+            <fieldset id="dashBoard">
+            </fieldset>
+        </form>
+        <button id="newList">Create New to-do List</button>
+    </div>
+    <!--Blank List Page-->
+    <div class="blankList">
+        <h2>Create New List</h2>
+        <form id="blankListFormName">
+            <filedset>
+                <label for="listName">List Name</label>
+                <input type="text" id="listName">
+                <input type="submit" id="addNewListNameBtn">
+
+            </filedset>
+            </form>
+            <form id="blankListItemsForm">
+                <fieldset>
+                    <label for="item">Add Items</label>
+                    <input type="text" id="item">
+                    <input type="submit" id="addNewListItemBtn">
+                </fieldset>
+            </form>
+            <input type="submit" value="Save List" id="save">
+        <ul class="newListCreated">
+        </ul>
+        <div class="newList">
+            <div id="newListName"></div>
+            <ul id="toDoList">
+            </ul>
+        </div>
+    </div>
+
+    <!--To do list-->
+    <div class="toDoList">
+        <h2>To-do-List :</h2>
+        <form id="toDoListForm">
+            <fieldset>
+                <input type="text" id="newItem">
+                <input type="submit" id="newItemBtn" value="Add">
+            </fieldset>
+        </form>
+        <ul id="toDoList"></ul>
+    </div>
+    <!--Account Settings Page-->
+
+    <div class="accountSettings">
+        <form id="accountSettingsForm">
+            <fieldset id="editInfo">
+                <label for="firstName">First Name</label>
+                <input type="text" id="changeFirstName" >
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="changeLastName" >
+
+                <label for="email">E-mail</label>
+                <input type="email" id="changeEmail">
+
+                <label for="password">Password</label>
+                <input type="password" id="changePassword">
+                <input type="submit" id="editBtn" value="Edit Settings">
+            </fieldset>
+        </form>
+    </div> 
+    <script src="app.js"></script>
+</body>
+
+</html>
