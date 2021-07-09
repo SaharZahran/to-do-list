@@ -46,12 +46,12 @@
                 <input type="submit" id="submitBtn">
             </fieldset>
         </form>
-        <div class="terms">
+        <form class="terms">
             <input type="checkbox" id="agreement">
             <label for="agreement">I agree to the Terms of Use</label>
-        </div>
+        </form>
         <div id="image">
-            <img src=''>
+            <img src='images\1560.png'>
         </div>
     </div>
     <!-- Log in Page-->
@@ -107,14 +107,23 @@
 
     <!--To do list-->
     <div class="toDoList">
-        <h2>To-do-List :</h2>
+        <div id="changeName">
+            <h2 id="head"></h2>
+            <button id="editName">Edit List Name</button>
+        </div>
+            <form id="changeNameForm">
+            <input type="text" id="replaceName" placeholder="Change Name">
+            <input type="submit" value="Change" id="changeBtn">
+        </form>
+        <br>
         <form id="toDoListForm">
             <fieldset>
                 <input type="text" id="newItem">
                 <input type="submit" id="newItemBtn" value="Add">
             </fieldset>
         </form>
-        <ul id="toDoList"></ul>
+        <div id="toDoList"></div>
+        <button id="back">Back to Dashboard</button>
     </div>
     <!--Account Settings Page-->
 
